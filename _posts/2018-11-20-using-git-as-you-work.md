@@ -1,12 +1,12 @@
 ---
-title: 깃(Git) 작업 플로우
-key: 20181118
+title: 깃(Git)과 함께 개발하기
+key: 20181120
 categories: [git]
 tags: [Git, git guide]
 ---
-실제 팀으로 일하면서 깃을 사용하다보면 코딩보다 깃으로 소스 관리하는게 더 어려울 때가 있습니다. 자주 사용하는 명령어는 다섯 손가락 안에 들 정도로 몇개 안되는데요. 한창 개발 중인 코드를 실수로 `master`에 머지를 한다던지, 라이브 서버에 접속해서 개발용 브랜치를 풀 받는다던지 하는 예상치 못 했던 실수가 사람을 식은 땀 흘리게 만들죠. 분명히 고객 끄덕이는 분 계실 겁니다.
+실제 팀으로 일하면서 깃을 사용하다보면 코딩보다 깃으로 소스 관리하는게 더 어려울 때가 있습니다. 자주 사용하는 명령어는 다섯 손가락 안에 들 정도로 몇개 안되는데요. 한창 개발 중인 코드를 실수로 `master`에 머지를 한다던지, 라이브 서버에 접속해서 개발용 브랜치를 풀 받는다던지 하는 예상치 못 했던 실수가 사람을 식은 땀 흘리게 만들죠. 분명히 고개 끄덕이는 분 계실 겁니다.
 
-개인적으로는 제일 많이 사용하는 깃 명령어는 `git status`와 `git diff`입니다. 커밋, 푸시, 머지 하기전에 수시로 확인하기때문입니다. 돌다리도 두드려보고 건너간다는 말 꼭 기억해야합니다.
+개인적으로는 제일 많이 사용하는 깃 명령어는 `git status`와 `git diff`입니다. 커밋, 푸시, 머지 하기전에 수시로 확인하기때문이죠. 돌다리도 두드려보고 건너간다는 말 꼭 기억해야합니다.
 
 개발을 할 때 어떤 깃 명령어를 사용하는지 보도록 하겠습니다. 적절한 시점에 꼭 필요한 명령어 사용해서 한번씩 더 확인하는 습관을 꼭 기억해 주세요.
 ![Using Git As you work](/assets/images/usinggitasworking.png)
@@ -49,7 +49,7 @@ $ git pull origin master
 {% endhighlight %}
 여기서 `origin`은 리모트에 있는 깃서버 이름입니다. 깃에서 기본으로 설정하는 이름이죠. 그다음 `master`는 origin 서버에 있는 브랜치 이름이고요. origin 서버에 있는 master 브랜치를 가져와서 현재 로컬 리포지토리의 master 브랜치에 머지를 해 달라는 명령어 입니다. 실제로 `git pull`은 `git fetch && git merge FETCH_HEAD` 를 한번에 실행해 주는 명령어인데요. `git fetch`는 리모트 서버로부터 변경된 내역을 받아와서 FETCH_HEAD에 저장을 해 줍니다. 현재 작업하고 있는 브랜치의 HEAD에 바로 머지를 해 주지 않고 별도로 보관을 하고 있는 거죠. 그 다음에 `git merge FETCH_HEAD` 명령어로 현재 작업 브랜치에 머지를 해 주는 것입니다.
 
-특별히 내가 수정한 내역을 로모트 서버에 푸시를 할 때는 먼저 풀을 해 줘야합니다. 만일 내가 마지막으로 풀을 받은 이후에 리모트 서버에 새로 푸시된 내역이 있다면 풀 없이 푸시를 하게 되면 에러가 납니다.
+특별히 내가 수정한 내역을 로모트 서버에 푸시를 할 때는 먼저 풀을 해 줘야합니다. 만일 내가 마지막으로 풀을 받은 이후에 리모트 서버에 새로 푸시된 내역이 있다면 푸시를 할 때 에러가 납니다.
 {% highlight bash %}
 $ git push origin master
 To https://github.com/saykent/gitwork.git
@@ -106,7 +106,7 @@ Your branch is up to date with 'origin/master'.
 $ git checkout -b jira-1002
 Switched to a new branch 'jira-1002'
 {% endhighlight %}
-지라 티켓 번호로 브랜치를 만든 예입니다. 새로운 기능을 개발하고 있다면 기능 이름으로 브랜치를 만드는 것도 좋습니다. 이제 새로 만들어진 브랜치에서 작업을 원하는대로 하면 됩니다.
+지라 티켓 번호로 브랜치를 만든 예입니다. 새로운 기능을 개발하고 있다면 기능 이름으로 브랜치를 만드는 것도 좋습니다. 이제 새로 만들어진 브랜치에서 작업을 원하는대로 하면 됩니다. 브랜치간의 이동은 `git checkout <branch_name>`으로 하면 됩니다. 수정한 내용이 있다면 브랜치를 이동하기 전에 꼭 커밋을 먼저 해 줘야합니다.
 
 ## 스테이지 영역
 깃에서 관리하는 파일은 `커밋된 파일(committed)`, `수정된 파일(modified)`, `스테이지된 파일(staged)`로 상태를 구분할 수 있습니다. 
@@ -207,6 +207,102 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 {% endhighlight %}
+
+### 파일을 삭제하기
+파일 삭제하기 맞습니다. 개발을 한다고 해서 파일이 추가되기만 하라는 법은 없죠. `git rm`이 이때 사용하는 명령어 입니다. 두가지 삭제 방식이 있는데요. 한가지는 파일을 실제로 삭제하는 것입니다. 다른 하나는 실제로 파일을 삭제하지는 않고 깃이 관리하지 않는 파일로 만드는 것이죠.
+
+실제로 파일을 삭제하려면 `git rm <filename>`으로 명령어를 주면 됩니다. 실제로는 터미널에서 쉘 명령어로 삭제하고 git add를 하는 것과 동일한 효과를 내는 명령어 입니다.
+{% highlight bash %}
+ $ ls
+LICENSE     README.md   products.py review.py
+
+git rm products.py 
+rm 'products.py'
+
+git status
+On branch jira-1002
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    products.py
+
+$ ls products.py 
+ls: products.py: No such file or directory
+{% endhighlight %}
+
+이와는 달리 실제로 파일은 삭제하지 않고 갓이 관리에서만 제외를 하고 싶은 경우에는 `git rm --cached <filename>` 명령어를 사용하면 됩니다. 이런 경우에는 `.gitignore`에 해당 파일을 추가해서 다시는 깃에 포함시키지 않토록 하는 게 일반적이죠.
+{% highlight bash %}
+$ git rm --cached order.py 
+rm 'order.py'
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    order.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	order.py
+
+$ echo order.py >> .gitignore 
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    order.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .gitignore
+{% endhighlight %}
+
+`git rm --cached order.py`로 order.py를 삭제 하고나니 order.py가 깃관리 영역에서 제외되었다는 `Untracked files`에 포하된 것을 확인했습니다. 그리고 .gitignore에 추가해서 다음에도 깃에 추가되지 않도록 했고요. 주로 IDE 설정 파일이나 컴파일을 하면서 만들어 지는 중간 파일을 `git rm`으로 지우고 .gitignore 파일에 추가하는 경우가 많습니다. 설정 파일 같은 경우도 샘플 파일은 깃에 포함시키지만 실제 사용하는 파일은 깃에 포함시키지 않아야하고요. 실수로 이런 파일이 올라갔다면 `git rm --cached`를 사용해서 깃에서 빼서 관리가 안되도록 해야겠죠.
+
+## 변경 내용 커밋
+어느정도 작업된 내용을 스테이지 영역에 추가를 했다면 커밋을 할 준비는 다 된 셈입니다. 커밋은 `git commit` 명령어를 사용하게 됩니다. 보통은 간단한 한줄짜리 코멘트를 붙여서 커밋을 하게 되는데요. 이때는 `git commit -m "My commit message."` 처럼 `-m` 옵션을 사용할 수 있습니다.
+{% highlight bash %}
+$ git commit -m "Add review function."
+[jira-1002 3db0705] Add review function.
+ 1 file changed, 3 insertions(+)
+{% endhighlight %}
+
+`-m` 옵션 없이 `git commit` 명령어를 실행하면 깃이 자동으로 에디터 프로그램을 하나 실행합니다. 이때는 에디터를 사요해서 여러 줄짜리 코멘트를 입력할 수 있게 되고요. 
+
+코멘트를 얼마나 길게 적어야하는지는 지금 커밋이 어떤 내용을 포함하고 있는지와 개발 단계에따라 달라집니다. 개발 중간 중간에 수정한 내용을 올리는 커밋이라면 한줄짜리로도 충분하고요. 하나의 작업이 마무리된 시점에 올리는 커밋이라면 내용을 좀 길게 적어서라도 수정 내용을 잘 기록해 두는 것이 좋습니다.
+
+커밋관련 된 내용은 ['커밋시 지켜야할 사항'](/git/git-commit-discipline.html#커밋시-지켜야할-사항)에 있는 내용을 다시 한번 꼭 읽어보시기를 권해드립니다. 커밋은 최소한의 논리적으로 연관된 단위별로 하는게 좋다는 말도 꼭 기억하시고요. 커밋시 입력하는 코멘트에 대해서는 ['커밋 메시지'](/git/git-commit-discipline.html#커밋-메시지)를 다시 한번 읽어보시고 팀간에 공유를 해 보는 것도 좋습니다.
+
+이유를 불문하고 커밋은 가능하면 작은 단위로 자주하는게 좋다는 점도 강조하고 싶습니다.
+
+## 깃 서버에 푸시
+팀으로 개발을 하고 있다면 팀원간에 함께 공유하고 있는 브랜치에 푸시를 하는 것은 좀 잘 생각을 하고 해야합니다. 무심코 한 푸시가 여러 사람 넋 놓고 앉아 있게 만들 수 있기때문이죠. 어떤때는 열심히 일하던 동료를 하던 일을 멈추고 디버깅을 하도록 만들 수도 있습니다.
+
+하지만 개인적으로 사용하고 있는 피처 브랜치라면 이야기는 다르죠. 가능하면 자주 커밋을 해서 서버에 보관하는 것이 좋습니다. 혹시나 있을 수 있는 로컬 컴퓨터의 불상사에 대한 대비도 되고요. 여러대의 컴퓨터나 다른 장소에 가서 작업을 하고 싶을 때도 미리 서버에 푸시가 되어 있어야 가능하죠.
+
+`git push` 명령어를 사용홰서 푸시를 할 수 있는데요. 만일 브랜치를 하나 새로 생성했고 푸시를 하고 싶다면 master 브랜치에 푸시를 하는 것과 동일하게 푸시를 하면 됩니다.
+{% highlight bash %}
+$ git push origin new_branch
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'new_branch' on GitHub by visiting:
+remote:      https://github.com/saykent/gitwork/pull/new/new_branch
+remote: 
+To https://github.com/saykent/gitwork.git
+ * [new branch]      new_branch -> new_branch
+{% endhighlight %}
+마지막 라인에 `* [new branch]`라고 되어 있는 부분이 리모트 서버에 새로 브랜치를 생성했다는 메시지입니다. `git push origin <branch_name>`같은 형식으로 명령어를 사용하면 되고요.
+
+이렇게 해서 깃을 사용해서 작업하는 프로우를 죽 훑어봤습니다. 실제로 개발을 하다보면 앞에서 이야기한 정도의 명령어면 모든게 커버를 됩니다. 특별히 뭔가 복잡한 생각이 들 때는 구글에 검색을 해 보면 되고요.
+아무쪼록 깃과 친하게 지내시기를 바랍니다.
 
 
 참고 : Zulip 문서 [Using Git as you work](https://zulip.readthedocs.io/en/latest/git/using.html)
