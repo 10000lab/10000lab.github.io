@@ -1,11 +1,13 @@
 NAV:
   HOME:
     en:      "Home"
+    ko-Kr:   "홈"
     zh:      "主页"
     zh-Hans: "主页"
     zh-Hant: "主頁"
   ALL:
     en:      "Archive"
+    ko-Kr:   "전체글"
     zh:      "归档"
     zh-Hans: "归档"
     zh-Hant: "歸檔"
@@ -47,12 +49,14 @@ LAST_UPDATED:
 
 PREVIOUS:
   en:      "PREVIOUS"
+  ko-Kr:   "이전" 
   zh:      "上篇"
   zh-Hans: "上篇"
   zh-Hant: "上篇"
 
 NEXT:
   en:      "NEXT"
+  ko-Kr:   "다음"
   zh:      "下篇"
   zh-Hans: "下篇"
   zh-Hant: "下篇"
