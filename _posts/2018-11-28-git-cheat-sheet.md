@@ -5,7 +5,9 @@ categories: [git]
 tags: [Git, git guide, git cheat sheet]
 ---
 ## 필수 명령어
-가장 일반적으로 자주 사용하는 깃 명령어들 모음입니다. 줄립의 [깃 가이드](https://zulip.readthedocs.io/en/latest/git/cheat-sheet.html)에 잘 정리되어 있어서 목록을 그대로 옮겨 놓았습니다. [깃 유용한 팁](git/git-tips-you-need.html)에 있는 내용도 함께 참고해서 보세요.
+소프트웨어 개발을 하면서 실전에서 깃을 사용하다보면 익숙하게 사용하는 명령어는 6개 정도 되는 것 같습니다. add, commit, push, pull, status, diff가 개인적으로 제일 많이 사용하는 명령어 입니다. 그나마도 여러가지 옵션을 넣어 사용할 수 있을텐데 기억하고 있는 옵션을 정말 몇개 안되고요.
+
+가장 일반적으로 자주 사용하는 깃 명령어들 모음입니다. 줄립의 [깃 가이드](https://zulip.readthedocs.io/en/latest/git/cheat-sheet.html)에 잘 정리되어 있어서 목록을 그대로 옮겨 놓았습니다. [깃 유용한 팁](git/git-tips-you-need.html)에 있는 내용도 함께 참고해서 보세요. 한번 죽 읽어보고 나중에 필요할 때 참조를 해서 보면 됩니다.
 
 ### 명령어 목록
 - add
