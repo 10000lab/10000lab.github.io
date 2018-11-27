@@ -199,6 +199,6 @@ Date:   Tue Nov 27 22:02:40 2018 +1100
 ## 참고
 - 줄립 문서: [Git Guide](https://zulip.readthedocs.io/en/latest/git/fixing-commits.html)
 - 깃허브: [Changing a commit message](https://help.github.com/articles/changing-a-commit-message/)
-- 프로 킷: [A Short History of Git](https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git)
+- 프로 깃: [A Short History of Git](https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git)
 
 ---
