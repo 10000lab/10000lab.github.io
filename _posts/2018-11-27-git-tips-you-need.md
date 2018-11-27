@@ -8,6 +8,7 @@ tags: [Git, git guide, git tips]
 깃은 처음부터 리눅스 오픈 소스를 관리하기 위해 만들어졌습니다. 2005년에 그간 리눅스 소스를 관리하던 툴(BitKeeper)을 공급하던 회사와 관계가 안 좋아 지면서 자체적으로 사용할 수 있는 버전 관리 시스템이 필요하게 되었죠. 리눅스를 처음 만든 리누스 토발즈(Linus Torvalds)도 깃 개발에 적극적으로 참여하게 되고요. 깃 개발의 시작과 과정이 리눅스라는 복잡한 소프트웨어와 수많은 컨트리뷰터를 위한 것이다 보니 여러 상황에 대처할 수 있는 유용한 기능이 많이 있습니다.
 
 ![Git Tips](/assets/images/git_tips.png)
+[Designed by Freepik](https://www.freepik.com/free-vector/helpful-tip-composition-with-flat-design_2560701.htm)
 
 깃을 사용하면서 알아두면 큰 자신감을 얻게되는 유용한 팁들을 알아보겠습니다. 관련된 내용은 오픈 소스 팀 채팅 소프트웨어인 [줄립의 문서](https://zulip.readthedocs.io/en/latest/git/index.html)에서 많은 부분 참고하였습니다.
 
