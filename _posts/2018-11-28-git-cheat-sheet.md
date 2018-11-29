@@ -111,4 +111,14 @@ tags: [Git, git guide, git cheat sheet]
 - status
     - `git status`: 현재 작업 트리의 상태, 스테이지 영역에 있는 파일 등을 보여줌.
 
+
+## 깃 실전 가이드
+1. [깃은 뭐가 다른가](/git/how-git-is-different.html)
+2. [깃과 함께 개발하기](/git/using-git-as-you-work.html)
+3. [깃 커밋 가이드](/git/git-commit-discipline.html)
+4. [깃 리베이스 사용하기](/git/git-rebase-workflow.html)
+5. [깃 유용한 팁](/git/git-tips-you-need.html)
+6. [깃 용어 정리](/git/important-git-terms.html)
+7. [깃 필수 명령어](/git/git-cheat-sheet.html)
+
 ---

@@ -61,4 +61,13 @@ Date:   Wed Nov 14 20:54:57 2018 +1100
 ### 리베이스(rebase)
 현재 브랜치 처음 생성할 때 어느 특정 커밋(base)에서 시작된 것입니다. 리베이스는 이 베이스를 다시 다른 브랜치의 head로 이동하는 것입니다. 이동을 하게되면 자동으로 현재 브랜치에서 변경된 내역을 새로 변경된 베이스에서 시작된 것으로 커밋을 생성해 줍니다.
 
+## 깃 실전 가이드
+1. [깃은 뭐가 다른가](/git/how-git-is-different.html)
+2. [깃과 함께 개발하기](/git/using-git-as-you-work.html)
+3. [깃 커밋 가이드](/git/git-commit-discipline.html)
+4. [깃 리베이스 사용하기](/git/git-rebase-workflow.html)
+5. [깃 유용한 팁](/git/git-tips-you-need.html)
+6. [깃 용어 정리](/git/important-git-terms.html)
+7. [깃 필수 명령어](/git/git-cheat-sheet.html)
+
 ---

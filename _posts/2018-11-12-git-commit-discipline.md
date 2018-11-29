@@ -83,4 +83,13 @@ Add GitLab integration.
 
 앞서 말씀드린대로 git 커밋 히스토리를 깨끗하게 유지라혀면 어느정도 훈련과 연습 과정을 거쳐야합니다. 생각해 보면 프로그램을 배우는 과정도 시간을 들여 고통을 감내해야하는 훈력과 연습이었습니다. git도 동일한 과정을 겪다보면 어느 순간에는 익숙하게 사용하고 있는 자신을 발견하게 될 겁니다.
 
+## 깃 실전 가이드
+1. [깃은 뭐가 다른가](/git/how-git-is-different.html)
+2. [깃과 함께 개발하기](/git/using-git-as-you-work.html)
+3. [깃 커밋 가이드](/git/git-commit-discipline.html)
+4. [깃 리베이스 사용하기](/git/git-rebase-workflow.html)
+5. [깃 유용한 팁](/git/git-tips-you-need.html)
+6. [깃 용어 정리](/git/important-git-terms.html)
+7. [깃 필수 명령어](/git/git-cheat-sheet.html)
+
 ---

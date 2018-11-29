@@ -46,7 +46,16 @@ tags: [Git, git guide]
 ### 깃의 일반적인 작업 방식은 수정, 추가, 커밋입니다.
 워킹 트리(working tree)에 있는 파일을 수정하는 것으로 작업이 시작됩니다. 수정된 내역은 `git add` 명령으로 스태이징 영역에 추가를 합니다. 그리고 `git commit` 명령어로 스테이징 영역에 있는 파일을 커밋하게 됩니다.
 
-[참고자료]
+## 깃 실전 가이드
+1. [깃은 뭐가 다른가](/git/how-git-is-different.html)
+2. [깃과 함께 개발하기](/git/using-git-as-you-work.html)
+3. [깃 커밋 가이드](/git/git-commit-discipline.html)
+4. [깃 리베이스 사용하기](/git/git-rebase-workflow.html)
+5. [깃 유용한 팁](/git/git-tips-you-need.html)
+6. [깃 용어 정리](/git/important-git-terms.html)
+7. [깃 필수 명령어](/git/git-cheat-sheet.html)
+
+## 참고자료
 - [How Git is different](https://zulip.readthedocs.io/en/latest/git/the-git-difference.html)
 - [Git Basics](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
 - 이미지는 Git Basics에 있는 이미지를 가져 왔습니다.

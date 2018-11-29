@@ -304,7 +304,16 @@ To https://github.com/saykent/gitwork.git
 이렇게 해서 깃을 사용해서 작업하는 프로우를 죽 훑어봤습니다. 실제로 개발을 하다보면 앞에서 이야기한 정도의 명령어면 모든게 커버를 됩니다. 특별히 뭔가 복잡한 생각이 들 때는 구글에 검색을 해 보면 되고요.
 아무쪼록 깃과 친하게 지내시기를 바랍니다.
 
+## 깃 실전 가이드
+1. [깃은 뭐가 다른가](/git/how-git-is-different.html)
+2. [깃과 함께 개발하기](/git/using-git-as-you-work.html)
+3. [깃 커밋 가이드](/git/git-commit-discipline.html)
+4. [깃 리베이스 사용하기](/git/git-rebase-workflow.html)
+5. [깃 유용한 팁](/git/git-tips-you-need.html)
+6. [깃 용어 정리](/git/important-git-terms.html)
+7. [깃 필수 명령어](/git/git-cheat-sheet.html)
 
-참고 : Zulip 문서 [Using Git as you work](https://zulip.readthedocs.io/en/latest/git/using.html)
+## 참고자료
+- Zulip 문서 [Using Git as you work](https://zulip.readthedocs.io/en/latest/git/using.html)
 
 ---
