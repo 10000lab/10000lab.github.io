@@ -32,7 +32,7 @@ layout: none
 <body>
   <div class="container">
     <!-- blog.tinkhub.com Fixed Size -->
-    <div style="width:500px">
+    <div>
       <ins class="adsbygoogle"
           style="display:inline-block;width:480px;height:90px"
           data-ad-client="{{ site.google_adsense.id }}"
@@ -50,7 +50,7 @@ layout: none
     </div>
 
     <div class="above-game">
-      <a class="undo-button">Undo</a><a class="restart-button">새로 시작</a>
+      <a class="undo-button">이전</a><a class="restart-button">새로 시작</a>
     </div>
 
     <div class="game-container">
@@ -93,7 +93,7 @@ layout: none
 
       </div>
     </div>
-    <div>
+    <div style="margin-top:5px">
     <!-- tech 10000lab bottom -->
       <ins class="adsbygoogle"
           style="display:block"
