@@ -5,7 +5,7 @@ layout: none
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2048</title>
+  <title>2048 게임</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
@@ -32,7 +32,7 @@ layout: none
 <body>
   <div class="container">
     <!-- blog.tinkhub.com Fixed Size -->
-    <div>
+    <div style="margin-bottom:8px">
       <ins class="adsbygoogle"
           style="display:inline-block;width:480px;height:90px"
           data-ad-client="{{ site.google_adsense.id }}"
