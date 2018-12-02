@@ -50,7 +50,7 @@ layout: none
     </div>
 
     <div class="above-game">
-      <a class="undo-button">Undo</a><a class="restart-button">New Game</a>
+      <a class="undo-button">Undo</a><a class="restart-button">새로 시작</a>
     </div>
 
     <div class="game-container">
@@ -58,7 +58,7 @@ layout: none
         <p></p>
         <div class="lower">
 	        <a class="keep-playing-button">Keep going</a>
-          <a class="retry-button">Try again</a>
+          <a class="retry-button">다시 하기</a>
         </div>
       </div>
 
@@ -93,8 +93,7 @@ layout: none
 
       </div>
     </div>
-    <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
-    <div style="width:500px;">
+    <div>
     <!-- tech 10000lab bottom -->
       <ins class="adsbygoogle"
           style="display:block"
@@ -107,17 +106,16 @@ layout: none
       </script>
     </div>
 
+    <p class="game-intro">같은 숫자를 합쳐서 <strong>2048 </strong>을 만드는 게임입니다.</p>
     <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+      <strong class="important">How to play:</strong> <strong>방향키</strong>나 휴대폰에서는 <strong>터치 슬라이드</strong>로 타일을 이동합니다.
     </p>
     <hr>
     <p>
-    <strong class="important">Note:</strong> This site is the official version of 2048. You can play it on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
+    <strong class="important">Note:</strong> 이 게임은 원작인 <a href="http://git.io/2048">http://git.io/2048.</a> 에서 일부 기능 수정한 버전입니다.
     </p>
     <hr>
-    <p>
-    Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
-    </p>
+    
   </div>
 
   <script src="js/bind_polyfill.js"></script>
