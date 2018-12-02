@@ -7,6 +7,10 @@ header:
       zh-Hant:  歸檔
     url:        /archive.html
   - titles:
+      en:       Mini Games
+      ko-Kr:    미니게임
+    url:        /games/2048
+  - titles:
       en:       About
       zh:       关于
       zh-Hans:  关于
