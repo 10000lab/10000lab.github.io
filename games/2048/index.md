@@ -30,6 +30,17 @@ layout: none
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
+  <div class="container">
+    <!-- blog.tinkhub.com Fixed Size -->
+    <div style="margin-bottom:8px">
+      <ins class="adsbygoogle"
+          style="display:inline-block;width:480px;height:90px"
+          data-ad-client="{{ site.google_adsense.id }}"
+          data-ad-slot="5205544350"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
     <div class="heading">
       <h1 class="title">2048</h1>
       <div class="scores-container">
