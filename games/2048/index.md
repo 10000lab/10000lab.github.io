@@ -42,7 +42,7 @@ layout: none
       </script>
     </div>
     <div class="heading">
-      <h1 class="title">2048</h1>
+      <h1 class="title">2048 게임</h1>
       <div class="scores-container">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
