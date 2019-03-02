@@ -45,7 +45,9 @@ $ brew doctor
 {% highlight bash %}
 brew install openldap libiconv
 {% endhighlight %}
-{%- include google-adsense/article-top.html -%}
+
+{%- include google-adsense/article-middle.html -%}
+
 # 아파치 설치
 맥오에스 모자브에는 아파치 2.4버전이 이미 설치되어 있습니다. 그런데 애플에서 몇몇 스크립트를 제거해서 홈브루와 함께 이 아파치를 사용하기는 어렵게 되었습니다. 방법은 아파치도 홈브루를 사용해서 추가로 다시 설치하고 기본 포트(80, 443)를 사용할 수 있도록 설정을 해 주는 것입니다.
 
