@@ -363,6 +363,6 @@ General-purpose scripting language
 ....
 {% endhighlight %}
 
-자 이제 전체 3개의 파트중에서 첫번째가 끝났습니다. 아파치 2.4를 설치하고 PHP 버전을 간단히 변경할 수 있는 스크립트도 추가했습니다. [2번째 파트](/php/php-apache-part2.html)에서는 MySql, Virtual Hosts, Xdebug 환경을 설정합니다.
+자 이제 아파치 2.4를 설치하고 PHP 버전을 간단히 변경할 수 있는 스크립트도 추가했습니다. [2번째 파트](/php/php-apache-part2.html)에서는 MySql, Virtual Hosts, Xdebug 환경을 설정합니다.
 
 ---
