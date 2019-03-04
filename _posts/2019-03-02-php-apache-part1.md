@@ -11,7 +11,7 @@ macOS 10.14 모자브(Mojave)에서 PHP 웹 개발환경을 만드는 가이드�
 
 >이 가이드는 [GRAV 개발 블로그](https://getgrav.org/blog/macos-mojave-apache-multiple-php-versions)에 있는 내용을 실제 적용하면서 번역한 내용입니다.
 
-이번 가이드에서는 `Apache 2.4`와 `여러개의 PHP 버전`을 설치하고 설정하는 과정을 차례로 설명합니다. 두번째 파트에서는 `MYSql, Apache virtual hosts, APC 캐시, Xdebug`를 설치해 보도록 하겠습니다.
+이번 가이드에서는 `Apache 2.4`와 `여러개의 PHP 버전`을 설치하고 설정하는 과정을 차례로 설명합니다. [두번째 파트](/php/php-apache-part2.html)에서는 `MYSql, Apache virtual hosts, Xdebug`를 설치해 보도록 하겠습니다.
 
 >이미 Homebrew/php 탭을 사용하여 PHP를 설치한 적이 있는데 Homebrew/core 탭을 사용한 방식으로 변경을 하고자 하신다면 [홈브루 업데이트](/php/upgrading-homebrew.html)를 먼저 보신 후 다시 이 가이드를 보시기 바랍니다. 우선 이전 설치된 내용을 깨끗이 지우는 과정이 설명되어 있습니다.
 
@@ -149,10 +149,6 @@ DocumentRoot /Users/your_user/Sites
 {% endhighlight %}
 같은 `<Directory>` 블럭 안에서 `AllowOverride`를 찾습니다. 그리고 아래와 같이 수정합니다.
 {% highlight apache %}
-# AllowOverride controls what directives may be placed in .htaccess files.
-# It can be "All", "None", or any combination of the keywords:
-#   AllowOverride FileInfo AuthConfig Limit
-#
 AllowOverride All
 {% endhighlight %}
 다음은 `mod_rewrite`를 활성화해야합니다. 기본적으로는 코멘트로 막혀있기때문에 `mod_rewrite.so`를 찾아서 `#`을 제거합니다.
@@ -367,6 +363,6 @@ General-purpose scripting language
 ....
 {% endhighlight %}
 
-자 이제 전체 3개의 파트중에서 첫번째가 끝났습니다. 아파치 2.4를 설치하고 PHP 버전을 간단히 변경할 수 있는 스크립트도 추가했습니다. 2번째 파트에서는 MySql, Virtual Hosts, APC 캐싱, YAML, Xdebug 환경을 설정합니다. 3번째 파트에서는 SSL을 설정하게 됩니다.
+자 이제 전체 3개의 파트중에서 첫번째가 끝났습니다. 아파치 2.4를 설치하고 PHP 버전을 간단히 변경할 수 있는 스크립트도 추가했습니다. [2번째 파트](/php/php-apache-part2.html)에서는 MySql, Virtual Hosts, Xdebug 환경을 설정합니다.
 
 ---
