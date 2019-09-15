@@ -2,7 +2,7 @@
 title: 깃(Git) 필수 명령어
 key: 20181128
 categories: [git]
-tags: [Git, git guide, git cheat sheet]
+tags: [Git 사용 가이드]
 ---
 ## 필수 명령어
 소프트웨어 개발을 하면서 실전에서 깃을 사용하다보면 익숙하게 사용하는 명령어는 6개 정도 되는 것 같습니다. add, commit, push, pull, status, diff가 개인적으로 제일 많이 사용하는 명령어 입니다. 그나마도 여러가지 옵션을 넣어 사용할 수 있을텐데 기억하고 있는 옵션을 정말 몇개 안되고요.

@@ -2,7 +2,7 @@
 title:  깃(Git) 커밋 가이드
 key: 20181111
 categories: [git]
-tags: [Git, git guide]
+tags: [Git 사용 가이드]
 ---
 
 ## 깃(Git) 커밋마다 겪는 일

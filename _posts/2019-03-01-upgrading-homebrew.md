@@ -2,7 +2,7 @@
 title:  macOS 10.14 Mojave PHP,Apache 설치 - 홈브루 업그레이드
 key: 20190302
 categories: [php]
-tags: [php, apache, macos]
+tags: [macOS에서 PHP 설치]
 ---
 
 이 글은 맥오에스 모자브에서 PHP 개발환경을 만들기 위한 사전 준비 작업에 해당하는 내용입니다. 특히  Homebrew/php 탭이 디프리케이션(deprecation)이 되면서 새로운 Homebrew/core 탭으로 개발환경을 설정하기 위해서 미리 해 두어야하는 작업에 해당합니다. 이전의 브루 포뮬러(brew formulae)에서 새로운 페클 페키지(pecl package) 방식으로 전환하는 가장 깔끔한 방법은 PHP 관련된 것을 모두 제거 하고 새로운 방식으로 설치를 하는 거겠죠.

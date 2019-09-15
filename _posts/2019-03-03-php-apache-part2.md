@@ -2,7 +2,7 @@
 title:  macOS 10.14 Mojave PHP,Apache 설치 - Part2
 key: 20190302p2
 categories: [php]
-tags: [php, apache, macos]
+tags: [macOS에서 PHP 설치]
 ---
 
 macOS 10.14 모자브(Mojave)에서 PHP 웹 개발환경을 만드는 가이드 part 2 입니다. 

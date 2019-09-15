@@ -2,7 +2,7 @@
 title: 깃(Git) 리베이스 사용하기
 key: 20181126
 categories: [git]
-tags: [Git, git guide, git rebase]
+tags: [Git 사용 가이드]
 ---
 여러 팀원이 작업한 내용이나 브랜치를 나눠서 작업하던 내용을 합치는 일반적인 깃 명령어는 `git merge`입니다. '가장 많이' 라는 말보다는 '거의' 라고 말하는 편이 맞겠죠. 그런데 깃에서 제공하는 인티그레이션용 명령어는 `git rebase`라는 것이 하나 더 있습니다. 실제로 팀 채팅 플랫폼인 [줄립(zuplip)](https://zulip.readthedocs.io/en/latest/git/overview.html)이나 오픈 강좌 플랫폼인 [이디엑스(edX)
 ](https://github.com/edx/edx-platform/wiki/How-to-Rebase-a-Pull-Request)에서는 머지를 통한 인티그레이션이 아닌 리베이스 방식을 사용하고 있습니다. 좀 더 정확히는 오픈 소스 컨트리뷰터가 풀 리퀘스트를 할때 리베이스를 사용하도록 하고 있는데요. 일반적인 팀 환경에서 기능 개발 후 master 머지 전에 이 기능을 사용하면 히스토리 관리가 깔끔하고 좋습니다.

@@ -2,7 +2,7 @@
 title:  깃(Git)은 뭐가 다른가?
 key: 20181113
 categories: [git]
-tags: [Git, git guide]
+tags: [Git 사용 가이드]
 ---
 
 ## 깃(git)에 관한 기본 지식

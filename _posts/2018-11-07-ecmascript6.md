@@ -2,7 +2,7 @@
 title: ECMAScript 6
 key: 20181107
 categories: [javascript]
-tags: [ES6, ECMAScript 6, ECMAScript 2015]
+tags: [ECMAScript 6]
 ---
 
 ## ES6 소개

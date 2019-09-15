@@ -2,7 +2,7 @@
 title:  어떻게 AI 기업으로 변화할 것인가
 key: 20181230
 categories: [ai]
-tags: [ai, ai guide]
+tags: [AI]
 ---
 
 >인공지능 분야의 세계적인 리더중 한분인 엔드류 잉이 이끄는 [랜딩 에이아이](https://landing.ai/)에 있는 `어떻게 AI 기업으로 변화할 것인가`라는 내용의 짧은 글입니다.
