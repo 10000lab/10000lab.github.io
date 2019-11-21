@@ -1,7 +1,7 @@
 ---
 title: OpenAI GPT-2 실행해 보기
 key: HowToRunOpenAIGPT-2
-categories: [Natural Language Processing]
+categories: [NaturalLanguageProcessing]
 tags: [Natural Language Processing]
 ---
 
