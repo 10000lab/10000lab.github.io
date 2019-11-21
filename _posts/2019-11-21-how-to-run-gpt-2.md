@@ -55,7 +55,7 @@ $ python download_model.py 355M
 $ python download_model.py 774M
 $ python download_model.py 1558M
 {% endhighlight %}
-
+{%- include google-adsense/article-middle.html -%}
 ## 예제를 실행합니다.
 355M 모델을 사용해서 실행을 해 보겠습니다.
 
